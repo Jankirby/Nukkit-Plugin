@@ -14,17 +14,18 @@ import java.util.LinkedHashMap;
 /**
  * author: MagicDroidX
  * NukkitExamplePlugin Project
+ * This is going to be heavily edited by me
  */
 public class MainClass extends PluginBase {
 
     @Override
     public void onLoad() {
-        this.getLogger().info(TextFormat.WHITE + "I've been loaded!");
+        this.getLogger().info(TextFormat.WHITE + "Nukkit-Plugin has been enabled like a jumping stick");
     }
 
     @Override
     public void onEnable() {
-        this.getLogger().info(TextFormat.DARK_GREEN + "I've been enabled!");
+        this.getLogger().info(TextFormat.DARK_GREEN + "Nukkit-Plugin has been enabked");
 
         this.getLogger().info(String.valueOf(this.getDataFolder().mkdirs()));
 
@@ -62,11 +63,19 @@ public class MainClass extends PluginBase {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         switch (command.getName()) {
-            case "example":
+            case "onehitkill":
                 try {
                     this.getLogger().info(Utils.readFile(new File(this.getDataFolder(), "string.txt")) + " " + sender.getName());
                 } catch (IOException e) {
                     throw new RuntimeException(e);
+                }
+                break;
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        switch (command.getName()) {
+            case "onehitkillabout":
+                try {
+                    this.getLogger().sendMessage("You are currently using OneHitOneKill by Jankirby")
                 }
                 break;
         }
