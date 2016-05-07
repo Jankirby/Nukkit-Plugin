@@ -1,5 +1,5 @@
 #name, main, version and api are required
-name: NukkitPlugin
+name: OneHitKill
 main: ExamplePlugin.MainClass
 #remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
 version: "1.0.0"
@@ -12,7 +12,7 @@ website: https://github.com/Jankirby
 commands:
   example:
     description: Example command
-    usage: "/example"
+    usage: "/onehitkill"
     permission: exampleplugin.command.example
 permissions:
   exampleplugin.command.example:
