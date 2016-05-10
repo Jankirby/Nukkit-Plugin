@@ -13,8 +13,8 @@ commands:
   example:
     description: Example command
     usage: "/onehitkill"
-    permission: exampleplugin.command.example
+    permission: onehitkill.command
 permissions:
-  exampleplugin.command.example:
-    description: "Allows the user to run the example command"
+  onehitkill.command:
+    description: "Allows the user to run the OneHitKill command"
     default: false
